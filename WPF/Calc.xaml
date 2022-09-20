@@ -1,0 +1,175 @@
+﻿<Window x:Class="WPF.Calc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Calc" Height="800" Width="400">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.8*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Foreground="White" FontSize="42" HorizontalContentAlignment="Right" FontFamily="Cascadia Mono SemiLight" FontWeight="Light">10 + 5</Label>
+        <Label Grid.Row="1" Foreground="Gray" FontSize="42" HorizontalContentAlignment="Right" FontFamily="Cascadia Mono SemiLight" FontWeight="Thin">15</Label>
+        <Label Grid.Row="2" Foreground="Green" FontSize="42" HorizontalAlignment="Right">Backspace</Label>
+        <Grid Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Foreground="Red" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF191919" Content="C" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="1" Foreground="Green" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="()" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Foreground="Green" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="%" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="3" Foreground="Green" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="/" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="0" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="7" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="1" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="8" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="2" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="9" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="3" Foreground="Green" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="X" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="2" Grid.Column="0" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="4" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="2" Grid.Column="1" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="5" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="2" Grid.Column="2" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="6" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="2" Grid.Column="3" Foreground="Green" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="-" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="3" Grid.Column="0" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="1" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="3" Grid.Column="1" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="2" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="3" Grid.Column="2" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="3" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="3" Grid.Column="3" Foreground="Green" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="+" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="4" Grid.Column="0" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="26" Background="#FF1C1C1D" Content="+/-" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="4" Grid.Column="1" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="0" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="4" Grid.Column="2" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="#FF1C1C1D" Content="." FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="4" Grid.Column="3" Foreground="White" BorderThickness="0" Height="90" Width="90" FontSize="40" Background="Green" Content="=" FontFamily="Cascadia Mono SemiLight" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="100"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

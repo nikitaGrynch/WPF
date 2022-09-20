@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPF.ColorButtons"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="ColorButtons" Height="300" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Grid.Column="0">
+            <Button FontSize="24" Content="Navy" Foreground="Navy" Margin="2"></Button>
+            <Button FontSize="24" Content="Blue" Foreground="Blue" Margin="2"></Button>
+            <Button FontSize="24" Content="Aqua" Foreground="Aqua" Margin="2"></Button>
+            <Button FontSize="24" Content="Teal" Foreground="Teal" Margin="2"></Button>
+            <Button FontSize="24" Content="Olive" Foreground="Olive" Margin="2"></Button>
+            <Button FontSize="24" Content="Green" Foreground="Green" Margin="2"></Button>
+            <Button FontSize="24" Content="Lime" Foreground="Lime" Margin="2"></Button>
+            <Button FontSize="24" Content="Yellow" Foreground="Yellow" Margin="2"></Button>
+            <Button FontSize="24" Content="Orange" Foreground="Orange" Margin="2"></Button>
+            <Button FontSize="24" Content="Red" Foreground="Red" Margin="2"></Button>
+            <Button FontSize="24" Content="Maroon" Foreground="Maroon" Margin="2"></Button>
+            <Button FontSize="24" Content="Fuchsia" Foreground="Fuchsia" Margin="2"></Button>
+            <Button FontSize="24" Content="Purple" Foreground="Purple" Margin="2"></Button>
+            <Button FontSize="24" Content="Black" Foreground="Black" Margin="2"></Button>
+            <Button FontSize="24" Content="Silver" Foreground="Silver" Margin="2"></Button>
+            <Button FontSize="24" Content="Gray" Foreground="Gray" Margin="2"></Button>
+            <Button FontSize="24" Content="White" Foreground="White" Margin="2"></Button>
+        </WrapPanel>
+    </Grid>
+</Window>
