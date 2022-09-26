@@ -1,0 +1,41 @@
+﻿<Window x:Class="WPF.Calc2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Calc2" Height="500" Width="850">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock" Grid.Column="0" FontSize="60" Margin="10"></TextBlock>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click" >7</Button>
+            <Button Grid.Column="1" Grid.Row="0" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click" >8</Button>
+            <Button Grid.Column="2" Grid.Row="0" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click" >9</Button>
+            <Button Grid.Column="0" Grid.Row="1" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click">4</Button>
+            <Button Grid.Column="1" Grid.Row="1" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click">5</Button>
+            <Button Grid.Column="2" Grid.Row="1" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click">6</Button>
+            <Button Grid.Column="0" Grid.Row="2" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click">3</Button>
+            <Button Grid.Column="1" Grid.Row="2" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click">2</Button>
+            <Button Grid.Column="2" Grid.Row="2" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click">1</Button>
+            <Button Grid.Column="0" Grid.Row="3" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click_C" >C</Button>
+            <Button Grid.Column="1" Grid.Row="3" FontSize="60" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" Click="Button_Click">0</Button>
+            <Button Grid.Column="2" Grid.Row="3" FontSize="50" Margin="5" FontFamily="Segoe UI Semibold" Height="100" Width="100" >Ok</Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF.DatePickerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="DatePickerWindow" Height="200" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DatePicker x:Name="datePicker1" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="30" CalendarClosed="datePicker1_CalendarClosed"/>
+        <DatePicker x:Name="datePicker2" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="30" CalendarClosed="datePicker1_CalendarClosed"></DatePicker>
+        <Label x:Name="label" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">Hello</Label>
+    </Grid>
+</Window>

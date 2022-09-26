@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF.ColorRadioButton"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="ColorRadioButton" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <RadioButton x:Name="RedRadioButton" DockPanel.Dock="Bottom" GroupName="Color" Foreground="Red" Margin="10" Checked="RadioButton_Checked">Red</RadioButton>
+            <RadioButton x:Name="GreenRadioButton" DockPanel.Dock="Bottom" GroupName="Color" Foreground="Green" Margin="10" Checked="RadioButton_Checked">Green</RadioButton>
+            <RadioButton x:Name="BlueRadioButton" DockPanel.Dock="Bottom" GroupName="Color" Foreground="Blue" Margin="10" Checked="RadioButton_Checked">Blue</RadioButton>
+            <RadioButton x:Name="YellowRadioButton" DockPanel.Dock="Bottom" GroupName="Color" Foreground="Yellow" Margin="10" Checked="RadioButton_Checked">Yellow</RadioButton>
+        </StackPanel>
+    </Grid>
+</Window>
