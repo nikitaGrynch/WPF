@@ -28,14 +28,20 @@ namespace WPF
         private void CreateGrid(int x, int y)
         {
             var grid = new Grid();
+
+            // Row Definition
             for(int i = 0; i < x; i++)
             {
                 grid.RowDefinitions.Add(new RowDefinition());
             }
+
+            // Column Definition
             for (int i = 0; i < y; i++)
             {
                 grid.ColumnDefinitions.Add(new ColumnDefinition());
             }
+
+            // Add buttons
             int n = 1;
             for (int i = 0; i < x; i++)
             {
