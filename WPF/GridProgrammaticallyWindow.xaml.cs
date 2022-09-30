@@ -22,12 +22,20 @@ namespace WPF
         public GridProgrammaticallyWindow()
         {
             InitializeComponent();
-            CreateGrid(10, 10);
+            var sv = new ScrollViewer();
+            sv.HorizontalScrollBarVisibility = ScrollBarVisibility.Visible;
+            sv.VerticalScrollBarVisibility = ScrollBarVisibility.Visible;
+            sv.Content = CreateGrid(1000, 1000);
+            var button = new Button();
+            button.Content = sv;
+            this.Content = button;
+            
         }
 
-        private void CreateGrid(int x, int y)
+        private Grid CreateGrid(int x, int y)
         {
             var grid = new Grid();
+            grid.ShowGridLines = true;
 
             // Row Definition
             for(int i = 0; i < x; i++)
@@ -48,6 +56,8 @@ namespace WPF
                 for (int j = 0; j < y; j++)
                 {
                     var button = new Button();
+                    button.Height = 50;
+                    button.Width = 50;
                     button.Content = n.ToString();
                     button.Name = "Button" + n.ToString();
                     button.Click += Button_Click;
@@ -60,7 +70,8 @@ namespace WPF
                     n++;
                 }
             }
-            this.Content = grid;
+            // this.Content = grid;
+            return grid;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

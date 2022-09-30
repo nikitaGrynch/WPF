@@ -1,0 +1,42 @@
+﻿<Window x:Class="WPF.LogoGraphics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="LogoGraphics" Height="450" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.35*"></ColumnDefinition>
+            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            <ColumnDefinition Width="0.35*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Viewbox Name="sign" Grid.Row="1" Grid.Column="1" Stretch="Fill">
+            <Canvas Width="200" Height="200">
+                <Polygon Fill="White" Stroke="Red" StrokeThickness="10"  Points="20, 50, 180, 50, 100, 200" StrokeLineJoin="Round"/>
+            </Canvas>
+        </Viewbox>
+        <Rectangle Grid.Row="2" Grid.Column="1" RenderTransformOrigin="1,0.5">
+            <Rectangle.Fill>
+                <VisualBrush Visual="{Binding ElementName=sign}"></VisualBrush>
+            </Rectangle.Fill>
+            <Rectangle.OpacityMask>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0.3" Color="Transparent"></GradientStop>
+                    <GradientStop Offset="1" Color="#44000000"></GradientStop>
+                </LinearGradientBrush>
+            </Rectangle.OpacityMask>
+            <Rectangle.RenderTransform>
+                <ScaleTransform ScaleY="-1"></ScaleTransform>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+    </Grid>
+</Window>
