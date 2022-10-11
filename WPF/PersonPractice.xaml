@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPFDataBinding.PersonPractice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDataBinding"
+        mc:Ignorable="d"
+        Title="PersonPractice" Height="320" Width="250">
+    <Grid>
+        <StackPanel>
+            <Label Content="Name" HorizontalAlignment="Center" Margin="0, 10, 0, 10"></Label>
+            <TextBox Name="nameTextBox" Width="160" Text="{Binding Path=Name, Mode=TwoWay}"></TextBox>
+            <Label Content="Surname" HorizontalAlignment="Center" Margin="0, 10, 0, 10"></Label>
+            <TextBox Name="surnameTextBox" Width="160" Text="{Binding Path=Surname, Mode=TwoWay}"></TextBox>
+            <Label Content="Age" HorizontalAlignment="Center" Margin="0, 10, 0, 10"></Label>
+            <TextBox Name="ageTextBox" Width="40" Text="{Binding Path=Age, Mode=TwoWay}"></TextBox>
+            <Button x:Name="refreshButton" Content="Refresh" Width="60" Margin="0, 20, 0, 0" Click="refreshButton_Click"></Button>
+            <Button x:Name="showButton" Content="Show" Width="60" Margin="0, 20, 0, 0" Click="showButton_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

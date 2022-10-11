@@ -1,0 +1,35 @@
+﻿<Window x:Class="WPF.LocalizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="LocalizationWindow" Height="450" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.8*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="uaButton" Margin="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60" Height="50" Background="White" BorderThickness="0" Click="button_Click">
+                <Image Source="C:\img\ua.png"></Image>
+            </Button>
+            <Button Name="ukButton" Margin="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60" Height="50" Background="White" BorderThickness="0" Click="button_Click">
+                <Image Source="C:\img\uk.png"></Image>
+            </Button>
+            <Button Name="esButton" Margin="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60" Height="50" Background="White" BorderThickness="0" Click="button_Click">
+                <Image Source="C:\img\es.png"></Image>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Label Name="Text1" FontSize="32"></Label>
+            <Label Name="Text2" FontSize="32"></Label>
+            <Label Name="Text3" FontSize="32"></Label>
+        </StackPanel>
+    </Grid>
+</Window>

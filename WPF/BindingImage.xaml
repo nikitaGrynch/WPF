@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPF.BindingImage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="BindingImage" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <ListBox x:Name="imgNames"></ListBox>
+            <Image Margin="20" Source="{Binding ElementName=imgNames, Path=SelectedItem}" Stretch="UniformToFill" ></Image>
+        </StackPanel>
+
+    </Grid>
+</Window>
