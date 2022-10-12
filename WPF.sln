@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF", "WPF\WPF.csproj", "{FB42FD16-B4F6-42C9-8975-C7E47087CD0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF", "WPF\WPF.csproj", "{FB42FD16-B4F6-42C9-8975-C7E47087CD0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorApp", "ColorApp\ColorApp.csproj", "{3AC2B85C-538F-4641-BE02-70CBAE2949F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FB42FD16-B4F6-42C9-8975-C7E47087CD0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB42FD16-B4F6-42C9-8975-C7E47087CD0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB42FD16-B4F6-42C9-8975-C7E47087CD0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AC2B85C-538F-4641-BE02-70CBAE2949F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC2B85C-538F-4641-BE02-70CBAE2949F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC2B85C-538F-4641-BE02-70CBAE2949F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC2B85C-538F-4641-BE02-70CBAE2949F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
