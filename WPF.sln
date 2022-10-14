@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF", "WPF\WPF.csproj", "{FB42FD16-B4F6-42C9-8975-C7E47087CD0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorApp", "ColorApp\ColorApp.csproj", "{3AC2B85C-538F-4641-BE02-70CBAE2949F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorApp", "ColorApp\ColorApp.csproj", "{3AC2B85C-538F-4641-BE02-70CBAE2949F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2048Game", "2048Game\2048Game.csproj", "{B3650EB4-8126-4FB9-8BF0-1D003F2940D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3AC2B85C-538F-4641-BE02-70CBAE2949F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AC2B85C-538F-4641-BE02-70CBAE2949F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AC2B85C-538F-4641-BE02-70CBAE2949F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3650EB4-8126-4FB9-8BF0-1D003F2940D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3650EB4-8126-4FB9-8BF0-1D003F2940D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3650EB4-8126-4FB9-8BF0-1D003F2940D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3650EB4-8126-4FB9-8BF0-1D003F2940D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
